@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".logintoAcount" >
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="306dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/sginup"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login"
+        android:text="Login"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldpasw"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/bottomlogin"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+
+
+        android:background="#f0fefdfd"
+        android:fadeScrollbars="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="horizontal|vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/qus1"
+        android:layout_width="188dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+
+
+        android:src="@drawable/qus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomlogin"
+        app:layout_constraintVertical_bias="0.55"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/signuppage"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/qus1"
+        app:layout_constraintTop_toTopOf="@+id/bottomlogin"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/oldemail"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/name"
+        android:ems="10"
+        android:hint="     Email"
+        android:inputType="textPersonName|text"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2" />
+
+    <EditText
+        android:id="@+id/oldpasw"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/name"
+        android:ems="10"
+        android:hint="     Password"
+        android:inputType="textPersonName|text"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldemail" />
+
+    <Button
+        android:id="@+id/forgotbut"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        android:text="Forgot Password"
+        android:textAllCaps="false"
+        app:layout_constraintCircleRadius="@android:dimen/notification_large_icon_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sginup"
+        tools:background="@android:color/holo_red_dark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

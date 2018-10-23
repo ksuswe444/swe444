@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "579961308844",
+    "firebase_url": "https://yummy-b55d9.firebaseio.com",
+    "project_id": "yummy-b55d9",
+    "storage_bucket": "yummy-b55d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579961308844:android:a4abea6493cdc241",
+        "android_client_info": {
+          "package_name": "com.example.yummy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579961308844-020k8drtblt0al9v004n2m6qfdtpjmau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yummy",
+            "certificate_hash": "10c168bfab4b39753609fd0dd139655a442ae49b"
+          }
+        },
+        {
+          "client_id": "579961308844-8betnp829dr9um0b57497p9kg4c7q8bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUgGatvwAyCtVtdS0MHydd31pCVLj2L24"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579961308844-8betnp829dr9um0b57497p9kg4c7q8bp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

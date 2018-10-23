@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storyboard"
+    app:startDestination="@id/logintoAcount">
+
+    <fragment
+        android:id="@+id/editInformation"
+        android:name="com.example.yummy.editInformation"
+        android:label="fragment_edit_information"
+        tools:layout="@layout/fragment_edit_information" >
+        <action
+            android:id="@+id/action_editInformation_to_manageAcountInformation"
+            app:destination="@id/manageAcountInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageAcountInformation"
+        android:name="com.example.yummy.manageAcountInformation"
+        android:label="fragment_manage_acount_information"
+        tools:layout="@layout/fragment_manage_acount_information" >
+        <action
+            android:id="@+id/actionSetting"
+            app:destination="@id/editInformation" />
+        <action
+            android:id="@+id/action_manageAcountInformation_to_displayfoods"
+            app:destination="@id/displayfoods" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.yummy.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_logintoAcount"
+            app:destination="@id/logintoAcount" />
+    </fragment>
+    <fragment
+        android:id="@+id/custmerpage"
+        android:name="com.example.yummy.Custmerpage"
+        android:label="fragment_custmerpage"
+        tools:layout="@layout/fragment_custmerpage" />
+    <fragment
+        android:id="@+id/displayList"
+        android:name="com.example.yummy.displayList"
+        android:label="fragment_display_list"
+        tools:layout="@layout/fragment_display_list" >
+        <action
+            android:id="@+id/action_displayList_to_custmerpage"
+            app:destination="@id/custmerpage" />
+    </fragment>
+    <fragment
+        android:id="@+id/createacount"
+        android:name="com.example.yummy.createacount"
+        android:label="fragment_createacount"
+        tools:layout="@layout/fragment_createacount" />
+    <fragment
+        android:id="@+id/logintoAcount"
+        android:name="com.example.yummy.logintoAcount"
+        android:label="fragment_loginto_acount"
+        tools:layout="@layout/fragment_loginto_acount" >
+        <action
+            android:id="@+id/action_logintoAcount_to_displayList"
+            app:destination="@id/displayList" />
+    </fragment>
+    <fragment
+        android:id="@+id/providerregister"
+        android:name="com.example.yummy.providerregister"
+        android:label="fragment_providerregister"
+        tools:layout="@layout/fragment_providerregister" />
+    <fragment
+        android:id="@+id/cusromerregister"
+        android:name="com.example.yummy.cusromerregister"
+        android:label="fragment_cusromerregister"
+        tools:layout="@layout/fragment_cusromerregister" />
+    <fragment
+        android:id="@+id/additem"
+        android:name="com.example.yummy.additem"
+        android:label="fragment_additem"
+        tools:layout="@layout/fragment_additem" >
+        <action
+            android:id="@+id/action_additem_to_manageAcountInformation"
+            app:destination="@id/manageAcountInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayfoods"
+        android:name="com.example.yummy.displayfoods"
+        android:label="fragment_displayfoods"
+        tools:layout="@layout/fragment_displayfoods" >
+        <action
+            android:id="@+id/action_displayfoods_to_manageAcountInformation"
+            app:destination="@id/manageAcountInformation" />
+    </fragment>
+    <activity
+        android:id="@+id/dispalymenu"
+        android:name="com.example.yummy.dispalymenu"
+        android:label="menu88"
+        tools:layout="@layout/menu88" />
+</navigation>
