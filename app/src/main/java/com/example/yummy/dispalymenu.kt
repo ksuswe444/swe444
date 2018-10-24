@@ -83,7 +83,7 @@ class dispalymenu : AppCompatActivity() {
             val fragmentClass: Class<*>? = null
             val mFragment: Fragment
 
-            val fragment: Custmerpage  // fragment instance of current fragment
+            val fragment: Custmerpage  // fragment instance of current fragmentk
 
             fragmentTransaction = supportFragmentManager.beginTransaction()
 
